@@ -32,12 +32,12 @@ sap.ui.define([
 			//set the model on view to be used by the UI controls
 			this.getView().setModel(oModel);
 			oComponent = this.getOwnerComponent();
-			//		console.log(oModel);
-			//	this.getPurchaseOrderList();
+		
 			this.getVendorList();
 			var POItemsModel = new JSONModel();
 			oView.setModel(POItemsModel, "POItemsModel");
 
+			//define the model to  field editable or not
 			var oEditModel = new JSONModel({
 				isEditable: true
 			});
